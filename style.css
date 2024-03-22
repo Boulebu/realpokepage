@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100vh;
+}
+
+:root {
+    --color1: #6420AA;
+    --color2: #FF3EA5;
+    --color3: #860A35;
+    --color4: #720455;
+    --color5: #D80032;
+    --color6: #2B2730;
+}
+
+.animated-background {
+    background: -webkit-linear-gradient(
+        -45deg, 
+        var(--color1), var(--color2), var(--color3), var(--color4), var(--color5), var(--color6), var(--color5), var(--color4), var(--color3), var(--color2), var(--color1)
+    );
+
+    background-size: 400% 400%;
+
+    -webkit-animation: wave 30s ease-in-out infinite;
+}
+
+@-webkit-keyframes wave{
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

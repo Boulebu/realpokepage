@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Including Bootstrap Support -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- End of Bootstrap Link -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>🐠 Pokemon API landing page 💋</title>
+</head>
+
+<body class="animated-background">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">PokePage</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Pokemon Api Page</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content of the page -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="col-12">
+                        
+                        <div class="card">
+                            <div class="card-body">
+
+                                <!-- Continue building the Contact Form following the Homework -->
+                                <h2>Contact Us</h2>
+                                <form id="contactForm">
+
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="from_name" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="from_email" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                    </div>
+
+                                    <div class="input-group mt-3">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success mt-3">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer of the page -->
+    <footer class="footer mt-5 bg-dark text-white text-center py-3">
+        &copy; 2024 Othman Adi
+    </footer>
+
+    <!-- Adding JS support to Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+    <!-- Adding the API bridge and key to EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "D6ieAodtUr71o0zO6",
+            });
+        })();
+    </script>
+
+    <!-- SweetAlert API bridge -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- Canvas Confetti API Bridge -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+
+</body>
+
+</html>
